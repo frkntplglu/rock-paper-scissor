@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rock - Paper - Scissors</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href=" style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Rock Paper Scissors</h1>
+  </header>
+  <main class="main">
+    <div class="scoreboard">
+      <div class="scoreboard__player" data-point="0"></div>
+      <div class="scoreboard__computer" data-point="0"></div>
+    </div>
+
+    <div class="playboard">
+      <div class="playboard__option playboard__rock" data-choice="Rock"><img src="img/rock.png" alt=""></div>
+      <div class="playboard__option playboard__paper" data-choice="Paper"><img src="img/paper.png" alt=""></div>
+      <div class="playboard__option playboard__scissors" data-choice="Scissor"><img src="img/scissor.png" alt=""></div>
+    </div>
+    <h3 class="make-your-move">Make your move!</h3>
+  </main>
+  <footer class="footer">It was created by Furkan Topaloğlu</footer>
+  <script src="app.js"></script>
+</body>
+</html>
