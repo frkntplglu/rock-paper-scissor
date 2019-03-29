@@ -21,15 +21,41 @@ options.forEach(function(e,f){
     
     yourMove.textContent = e.getAttribute("data-choice");
 
-    if(computerPick > yourPick){
-      computerPoint += 1;
-      computer.textContent = computerPoint;
-    }else if(computerPick == yourPick){
+    if(computerPick == yourPick){
       alert("That's tie! Try again!");
     }else{
-      playerPoint += 1;
-      player.textContent = playerPoint;
+      switch(yourPick){
+        case 1 :
+          if(computerPick == 2){
+            computerPoint += 1;
+            computer.textContent = computerPoint;
+          }else{
+            playerPoint += 1;
+            player.textContent = playerPoint;
+          }
+        break;
+        case 2 :
+          if(computerPick == 3){
+            computerPoint += 1;
+            computer.textContent = computerPoint;
+          }else{
+            playerPoint += 1;
+            player.textContent = playerPoint;
+          }
+        break;
+        case 3 :
+          if(computerPick == 1){
+            computerPoint += 1;
+            computer.textContent = computerPoint;
+          }else{
+            playerPoint += 1;
+            player.textContent = playerPoint;
+          }
+        break;
+      }
     }
+    
+
     
     //console.log("yourpick is " + yourPick + "and computer pick is " + computerPick);
   })
